@@ -15,7 +15,7 @@ class PendaftaranReguler extends Pendaftaran {
         $this->lokasiKampus = $lokasiKampus;
     }
 
-    // WAJIB: Implementasi dari abstract method induk
+    // OVERRIDING TAHAP 5: Tarif standar murni tanpa biaya tambahan
     public function hitungTotalBiaya() {
         return $this->biayaPendaftaranDasar;
     }

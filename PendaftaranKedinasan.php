@@ -14,9 +14,9 @@ class PendaftaranKedinasan extends Pendaftaran {
         $this->instansiSponsor = $instansiSponsor;
     }
 
-    // WAJIB: Implementasi dari abstract method induk
-     public function hitungTotalBiaya() {
-        return $this->biayaPendaftaranDasar;
+    // OVERRIDING TAHAP 5: Surcharge/biaya tambahan 25% (dikali 1.25)
+    public function hitungTotalBiaya() {
+        return $this->biayaPendaftaranDasar * 1.25;
     }
 
     public function tampilkanInfoJalur() {

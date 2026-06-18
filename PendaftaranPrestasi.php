@@ -14,9 +14,9 @@ class PendaftaranPrestasi extends Pendaftaran {
         $this->tingkatPrestasi = $tingkatPrestasi;
     }
 
-    // WAJIB: Implementasi dari abstract method induk
-     public function hitungTotalBiaya() {
-        return $this->biayaPendaftaranDasar;
+    // OVERRIDING TAHAP 5: Potongan sebesar Rp50.000
+    public function hitungTotalBiaya() {
+        return $this->biayaPendaftaranDasar - 50000;
     }
 
     public function tampilkanInfoJalur() {
