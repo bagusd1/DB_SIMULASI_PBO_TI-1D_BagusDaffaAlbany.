@@ -3,7 +3,7 @@ class Koneksi {
     private $host = "localhost";
     private $username = "root";
     private $password = "";
-    private $db_name = "db_kampus"; // Sesuaikan dengan nama databasemu
+    private $db_name = "db_simulasi_pbo_ti-1d_bagusdaffaalbany"; 
     public $conn;
 
     // Menangani koneksi database menggunakan PDO
